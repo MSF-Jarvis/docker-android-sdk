@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
+FROM msfjarvis/docker-zulu-jdk:alpine-jdk-8
 
 LABEL de.mindrunner.android-docker.flavour="alpine-standalone"
 

@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM msfjarvis/docker-zulu-jdk:ubuntu-jdk-8
 
 LABEL de.mindrunner.android-docker.flavour="ubuntu-standalone"
 
@@ -22,7 +22,6 @@ RUN dpkg --add-architecture i386 && apt-get update -yqq && apt-get install -y \
   libncurses5:i386 \
   libstdc++6:i386 \
   zlib1g:i386 \
-  openjdk-8-jdk \
   wget \
   unzip \
   vim \
