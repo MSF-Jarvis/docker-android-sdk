@@ -15,7 +15,7 @@ printenv
 if checkbin; then
     exec su-exec android:android /opt/tools/android-sdk-update.sh "$@"
 else
-    su_mt_user /opt/tools/android-sdk-update.sh ${1}
+    su_mt_user /opt/tools/android-sdk-update.sh "${1}"
 fi
 
 

@@ -19,7 +19,7 @@ else
     exit 1
 fi
 
-cd ${ANDROID_HOME}
+cd "${ANDROID_HOME}" || { echo "ANDROID_HOME doesn't exist!"; exit 1; }
 echo "Set ANDROID_HOME to ${ANDROID_HOME}"
 
 if [ -f .bootstrapped ]
@@ -38,11 +38,11 @@ mkdir -p ~/.android/
 touch ~/.android/repositories.cfg
 
 echo "Copying Licences"
-cp -rv /opt/licenses ${ANDROID_HOME}/licenses
+cp -rv /opt/licenses "${ANDROID_HOME}"/licenses
 
 echo "Copying Tools"
-mkdir -p ${ANDROID_HOME}/bin
-cp -v /opt/tools/*.sh ${ANDROID_HOME}/bin
+mkdir -p "${ANDROID_HOME}"/bin
+cp -v /opt/tools/*.sh "${ANDROID_HOME}"/bin
 
 echo "Print sdkmanager version"
 sdkmanager --version
@@ -51,11 +51,11 @@ sdkmanager --version
 echo "Installing packages"
 if [ $built_in_sdk -eq 1 ]
 then
-    while read p; do 
+    while read -r p; do
       android-accept-licenses.sh "sdkmanager ${SDKMNGR_OPTS} ${p}"
     done < /opt/tools/package-list-minimal.txt
 else
-    while read p; do
+    while read -r p; do
       android-accept-licenses.sh "sdkmanager ${SDKMNGR_OPTS} ${p}"
     done < /opt/tools/package-list.txt
 fi

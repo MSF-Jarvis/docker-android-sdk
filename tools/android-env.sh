@@ -7,7 +7,8 @@ export ANDROID_SDK=${ANDROID_HOME}
 
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}/emulator:${ANDROID_HOME}/bin:
 
-if [[ ! -z "$http_proxy" ]] || [[ ! -z "$https_proxy" ]]; then
+# shellcheck disable=SC2154
+if [[ -n "$http_proxy" ]] || [[ -n "$https_proxy" ]]; then
     export JAVA_OPTS="-Djava.net.useSystemProxies=true $JAVA_OPTS -Dhttp.noProxyHosts=${no_proxy}"
     # This only works if there is a proxy listening on docker host machine and
     # container is started with --net=host. No other options for now. Thanks
@@ -40,7 +41,7 @@ function update_sdk() {
 }
 
 function andep() {
-    if [ -z ${1} ]; then
+    if [ -z "${1}" ]; then
         help
         return 1
     fi

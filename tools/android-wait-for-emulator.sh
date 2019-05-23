@@ -9,7 +9,7 @@ sleeptime=10
 maxfail=$((timeout / sleeptime))
 
 until [[ "${bootcomplete}" =~ "1" ]]; do
-    bootcomplete=`adb -e shell getprop dev.bootcomplete 2>&1 &`
+    bootcomplete="$(adb -e shell getprop dev.bootcomplete 2>&1 &)"
     if [[ "${bootcomplete}" =~ "" ]]; then
         ((failcounter += 1))
         echo "Waiting for emulator to start"
