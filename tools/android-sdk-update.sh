@@ -51,13 +51,9 @@ sdkmanager --version
 echo "Installing packages"
 if [ $built_in_sdk -eq 1 ]
 then
-    while read -r p; do
-      sdkmanager "${SDKMNGR_OPTS}" "${p}"
-    done < /opt/tools/package-list-minimal.txt
+    while read -r p; do sdkmanager "${p}"; done < /opt/tools/package-list-minimal.txt
 else
-    while read -r p; do
-      sdkmanager "${SDKMNGR_OPTS}" "${p}"
-    done < /opt/tools/package-list.txt
+    while read -r p; do sdkmanager "${p}"; done < /opt/tools/package-list.txt
 fi
 
 echo "Updating SDK"
