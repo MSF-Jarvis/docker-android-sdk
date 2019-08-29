@@ -37,8 +37,6 @@ RUN groupadd android && useradd -d /opt/android-sdk-linux -g android -u 1000 and
 
 COPY tools /opt/tools
 
-COPY licenses /opt/licenses
-
 WORKDIR /opt/android-sdk-linux
 
 CMD /opt/tools/entrypoint.sh lazy-dl

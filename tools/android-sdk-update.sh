@@ -37,8 +37,10 @@ echo "Make sure repositories.cfg exists"
 mkdir -p ~/.android/
 touch ~/.android/repositories.cfg
 
-echo "Copying Licences"
-cp -rv /opt/licenses "${ANDROID_HOME}"/licenses
+echo "Updating all licenses"
+# Update tools to --licenses works
+yes | sdkmanager tools
+yes | sdkmanager --licenses
 
 echo "Copying Tools"
 mkdir -p "${ANDROID_HOME}"/bin
