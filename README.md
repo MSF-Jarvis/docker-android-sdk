@@ -13,23 +13,23 @@ lazydl
 
 
 # docker-android-sdk
-[![](https://images.microbadger.com/badges/version/runmymind/docker-android-sdk.svg)](https://microbadger.com/images/runmymind/docker-android-sdk "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/runmymind/docker-android-sdk.svg)](https://microbadger.com/images/runmymind/docker-android-sdk "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/msfjarvis/docker-android-sdk.svg)](https://microbadger.com/images/msfjarvis/docker-android-sdk "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/msfjarvis/docker-android-sdk.svg)](https://microbadger.com/images/msfjarvis/docker-android-sdk "Get your own image badge on microbadger.com")
 
-[![](https://images.microbadger.com/badges/version/runmymind/docker-android-sdk:lazydl.svg)](https://microbadger.com/images/runmymind/docker-android-sdk:lazydl "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/runmymind/docker-android-sdk:lazydl.svg)](https://microbadger.com/images/runmymind/docker-android-sdk:lazydl "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/msfjarvis/docker-android-sdk:lazydl.svg)](https://microbadger.com/images/msfjarvis/docker-android-sdk:lazydl "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/msfjarvis/docker-android-sdk:lazydl.svg)](https://microbadger.com/images/msfjarvis/docker-android-sdk:lazydl "Get your own image badge on microbadger.com")
 
-[![](https://images.microbadger.com/badges/version/runmymind/docker-android-sdk:ubuntu-lazydl.svg)](https://microbadger.com/images/runmymind/docker-android-sdk:ubuntu-lazydl "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/runmymind/docker-android-sdk:ubuntu-lazydl.svg)](https://microbadger.com/images/runmymind/docker-android-sdk:ubuntu-lazydl "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/msfjarvis/docker-android-sdk:ubuntu-lazydl.svg)](https://microbadger.com/images/msfjarvis/docker-android-sdk:ubuntu-lazydl "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/msfjarvis/docker-android-sdk:ubuntu-lazydl.svg)](https://microbadger.com/images/msfjarvis/docker-android-sdk:ubuntu-lazydl "Get your own image badge on microbadger.com")
 
-[![](https://images.microbadger.com/badges/version/runmymind/docker-android-sdk:ubuntu-standalone.svg)](https://microbadger.com/images/runmymind/docker-android-sdk:ubuntu-standalone "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/runmymind/docker-android-sdk:ubuntu-standalone.svg)](https://microbadger.com/images/runmymind/docker-android-sdk:ubuntu-standalone "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/msfjarvis/docker-android-sdk:ubuntu-standalone.svg)](https://microbadger.com/images/msfjarvis/docker-android-sdk:ubuntu-standalone "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/msfjarvis/docker-android-sdk:ubuntu-standalone.svg)](https://microbadger.com/images/msfjarvis/docker-android-sdk:ubuntu-standalone "Get your own image badge on microbadger.com")
 
-[![](https://images.microbadger.com/badges/version/runmymind/docker-android-sdk:alpine-lazydl.svg)](https://microbadger.com/images/runmymind/docker-android-sdk:alpine-lazydl "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/runmymind/docker-android-sdk:alpine-lazydl.svg)](https://microbadger.com/images/runmymind/docker-android-sdk:alpine-lazydl "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/msfjarvis/docker-android-sdk:alpine-lazydl.svg)](https://microbadger.com/images/msfjarvis/docker-android-sdk:alpine-lazydl "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/msfjarvis/docker-android-sdk:alpine-lazydl.svg)](https://microbadger.com/images/msfjarvis/docker-android-sdk:alpine-lazydl "Get your own image badge on microbadger.com")
 
-[![](https://images.microbadger.com/badges/version/runmymind/docker-android-sdk:alpine-standalone.svg)](https://microbadger.com/images/runmymind/docker-android-sdk:alpine-standalone "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/runmymind/docker-android-sdk:alpine-standalone.svg)](https://microbadger.com/images/runmymind/docker-android-sdk:alpine-standalone "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/msfjarvis/docker-android-sdk:alpine-standalone.svg)](https://microbadger.com/images/msfjarvis/docker-android-sdk:alpine-standalone "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/msfjarvis/docker-android-sdk:alpine-standalone.svg)](https://microbadger.com/images/msfjarvis/docker-android-sdk:alpine-standalone "Get your own image badge on microbadger.com")
 
 
 This repository contains Dockerfiles to create Docker images containing the android SDK. There are two flavours for different use cases (lazydl, standalone) and two different linux bases (ubuntu, alpine). Feel free to chose which one suits you best.
